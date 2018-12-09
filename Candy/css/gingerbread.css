@@ -1,0 +1,548 @@
+body {
+	width: 100%;
+	margin: 0;
+	overflow-x: hidden;
+}
+.wrapper {
+	display: flex;
+	display: -ms-flexbox;
+	flex-direction: column;
+}
+.head {
+	background-image: none;
+	background-color: #DCDCDC;
+	background-size: cover;
+	width: 100%;
+	height: 190px;
+}
+
+.logo {
+	position: relative;
+	width: 70px;
+	height: 30px;
+	left: 20px;
+	max-width: 100%;
+}
+.name_blog p {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 700;
+	font-family: 'Oswald', sans-serif;
+	color: #000;
+	margin-top: 50px;
+	text-align: center;
+}
+.text_sweater {
+	display: flex;
+	display: -ms-flexbox;
+	flex-direction: row;
+	flex-wrap: wrap;
+   justify-content: center;
+}
+.text_sweater p {
+	font-size: 15px;
+	line-height: 30px;
+	color: #000;
+	text-align: center;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+.img_sweater {
+	display: flex;
+	display: -ms-flexbox;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.img_sweater img {
+	width: 250px;
+	height: 130px;
+	padding: 40px;
+}
+@media all and (min-width: 460px) {
+.head {
+	height: 190px;
+}
+.logo {
+	width: 60px;
+	height: 30px;
+	top: -46px;
+}
+.name_blog p {
+	font-size: 15px;
+	margin-top: 30px;
+	color: #000;
+	font-family: 'Oswald', sans-serif;
+}
+.text_sweater {
+	display: flex;
+	display: -ms-flexbox;
+	flex-direction: row;
+	flex-wrap: wrap;
+   justify-content: center;
+}
+.text_sweater p {
+	font-size: 15px;
+	line-height: 30px;
+	color: #000;
+	width: 400px;
+	text-align: center;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+.img_sweater {
+	display: flex;
+	display: -ms-flexbox;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.img_sweater img {
+	width: 360px;
+	height: 230px;
+	padding: 40px;
+}
+}
+@media all and (min-width: 650px) {
+.head {
+	height: 190px;
+}
+.logo {
+	width: 90px;
+	height: 45px;
+	top: -53px;
+}
+.name_blog p {
+	font-size: 20px;
+	margin-top: 40px;
+	color: #000;
+	font-family: 'Oswald', sans-serif;
+}
+.text_sweater {
+	display: flex;
+	display: -ms-flexbox;
+	flex-direction: row;
+	flex-wrap: wrap;
+   justify-content: center;
+}
+.text_sweater p {
+	font-size: 20px;
+	line-height: 30px;
+	color: #000;
+	width: 500px;
+	text-align: center;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+.img_sweater {
+	display: flex;
+	display: -ms-flexbox;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.img_sweater img {
+	width: 380px;
+	height: 250px;
+	padding: 40px;
+}
+}
+@media all and (min-width: 800px) {
+.head {
+	height: 190px;
+}
+.logo {
+	width: 90px;
+	height: 45px;
+}
+.name_blog p {
+	font-size: 25px;
+	margin-top: 30px;
+	color: #000;
+	font-family: 'Oswald', sans-serif;
+}
+.text_sweater {
+	display: flex;
+	display: -ms-flexbox;
+	flex-direction: row;
+	flex-wrap: wrap;
+   justify-content: center;
+}
+.text_sweater p {
+	font-size: 20px;
+	line-height: 30px;
+	color: #000;
+	width: 500px;
+	text-align: center;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+.img_sweater {
+	display: flex;
+	display: -ms-flexbox;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.img_sweater img {
+	width: 440px;
+	height: 290px;
+	padding: 40px;
+}
+}
+@media all and (min-width: 1025px) {
+.head {
+	height: 190px;
+}
+.logo {
+	width: 140px;
+	height: 65px;
+}
+.name_blog p {
+	font-size: 40px;
+	margin-top: -10px;
+	color: #000;
+	font-family: 'Oswald', sans-serif;
+}
+
+.text_sweater {
+	display: flex;
+	display: -ms-flexbox;
+	flex-direction: row;
+	flex-wrap: wrap;
+   justify-content: center;
+}
+.text_sweater p {
+	font-size: 25px;
+	line-height: 30px;
+	color: #000;
+	width: 900px;
+	text-align: center;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+.img_sweater {
+	display: flex;
+	display: -ms-flexbox;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.img_sweater img {
+	width: 380px;
+	height: 250px;
+	padding: 40px;
+}
+}
+@media all and (min-width: 1122px) {
+.head {
+	height: 190px;
+}
+.logo {
+	width: 150px;
+	height: 65px;
+}
+.name_blog p {
+	font-size: 40px;
+	margin-top: -10px;
+	color: #000;
+	font-family: 'Oswald', sans-serif;
+}
+
+.text_sweater {
+	display: flex;
+	display: -ms-flexbox;
+	flex-direction: row;
+	flex-wrap: wrap;
+   justify-content: center;
+}
+.text_sweater p {
+	font-size: 25px;
+	line-height: 30px;
+	color: #000;
+	width: 900px;
+	text-align: center;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+.img_sweater {
+	display: flex;
+	display: -ms-flexbox;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.img_sweater img {
+	width: 380px;
+	height: 250px;
+	padding: 40px;
+}
+}
+@media all and (min-width: 1200px) {
+.head {
+	height: 190px;
+}
+.logo {
+	width: 140px;
+	height: 65px;
+}
+.name_blog p {
+	font-size: 40px;
+	margin-top: -10px;
+	color: #000;
+	font-family: 'Oswald', sans-serif;
+}
+
+.text_sweater {
+	display: flex;
+	display: -ms-flexbox;
+	flex-direction: row;
+	flex-wrap: wrap;
+   justify-content: center;
+}
+.text_sweater p {
+	font-size: 25px;
+	line-height: 30px;
+	color: #000;
+	width: 900px;
+	text-align: center;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+.img_sweater {
+	display: flex;
+	display: -ms-flexbox;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.img_sweater img {
+	width: 390px;
+	height: 260px;
+	padding: 40px;
+}
+}
+@media all and (min-width: 1360px) {
+.head {
+	height: 190px;
+}
+.logo {
+	width: 130px;
+	height: 130px;
+	left: 70px;
+	top: -25px;
+}
+.name_blog p {
+	font-size: 40px;
+	margin-top: -50px;
+	color: #000;
+	font-family: 'Oswald', sans-serif;
+}
+.text_sweater {
+	display: flex;
+	display: -ms-flexbox;
+	flex-direction: row;
+	flex-wrap: wrap;
+   justify-content: center;
+}
+.text_sweater p {
+	font-size: 25px;
+	line-height: 30px;
+	color: #000;
+	width: 900px;
+	text-align: center;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+.img_sweater {
+	display: flex;
+	display: -ms-flexbox;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.img_sweater img {
+	width: 390px;
+	height: 260px;
+	padding: 40px;
+}
+.social a {
+	padding: 0 5px;
+}
+}
+@media all and (min-width: 1400px) {
+.head {
+	height: 190px;
+}	
+.logo {
+	width: 130px;
+	height: 130px;
+	left: 70px;
+	top: -25px;
+}
+.name_blog p {
+	margin-top: -20px;
+}
+.text_sweater p {
+	font-size: 25px;
+	line-height: 30px;
+	color: #000;
+	width: 900px;
+	text-align: center;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+.img_sweater {
+	display: flex;
+	display: -ms-flexbox;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.img_sweater img {
+	width: 440px;
+	height: 300px;
+	padding: 40px;
+}
+}
+@media all and (min-width: 1500px) {
+.head {
+	height: 250px;
+}	
+.logo {
+	width: 130px;
+	height: 130px;
+	left: 70px;
+	top: -25px;
+}
+.name_blog p {
+	margin-top: -20px;
+}
+.img_sweater img {
+	width: 470px;
+	height: 340px;
+	padding: 40px;
+}
+}
+@media all and (min-width: 1600px) {
+.head {
+	height: 250px;
+}	
+.logo {
+	width: 130px;
+	height: 130px;
+	left: 70px;
+	top: -25px;
+}
+.name_blog p {
+	margin-top: -20px;
+}
+.img_sweater img {
+	width: 490px;
+	height: 360px;
+	padding: 40px;
+}
+}
+@media all and (min-width: 1700px) {
+.head {
+	height: 250px;
+}	
+.logo {
+	width: 130px;
+	height: 130px;
+	left: 70px;
+	top: -25px;
+}
+.name_blog p {
+	margin-top: -20px;
+}
+.img_sweater img {
+	width: 530px;
+	height: 380px;
+	padding: 40px;
+}
+.text_sweater p {
+	width: 1130px;
+	font-size: 30px;
+	line-height: 40px;
+}
+}
+@media all and (min-width: 1800px) {
+.head {
+	height: 250px;
+}	
+.logo {
+	width: 130px;
+	height: 130px;
+	left: 70px;
+	top: -25px;
+}
+.name_blog p {
+	margin-top: -20px;
+}
+.img_sweater img {
+	width: 560px;
+	height: 420px;
+	padding: 40px;
+}
+.text_sweater p {
+	width: 1200px;
+	font-size: 35px;
+	line-height: 40px;
+}
+.name_blog p {
+  font-size: 45px;
+  margin-top: -10px;
+}
+.social img {
+  width: 35px;
+  height: 35px;
+}
+}
+@media all and (min-width: 1900px) {
+.head {
+	height: 250px;
+}	
+.logo {
+	width: 130px;
+	height: 130px;
+	left: 70px;
+	top: -25px;
+}
+.name_blog p {
+	margin-top: -20px;
+}
+.img_sweater img {
+	width: 580px;
+	height: 400px;
+	padding: 40px;
+}
+.text_sweater p {
+	width: 1300px;
+	font-size: 35px;
+	line-height: 40px;
+}
+.name_blog p {
+  font-size: 45px;
+  margin-top: -10px;
+}
+.social img {
+  width: 35px;
+  height: 35px;
+}
+}
+@media all and (min-width: 2000px) {
+.head {
+	height: 250px;
+}	
+.logo {
+	width: 130px;
+	height: 130px;
+	left: 70px;
+	top: -25px;
+}
+.name_blog p {
+	margin-top: -20px;
+}
+.img_sweater img {
+	width: 600px;
+	height: 450px;
+	padding: 40px;
+}
+.text_sweater p {
+	width: 1300px;
+	font-size: 40px;
+	line-height: 50px;
+}
+}

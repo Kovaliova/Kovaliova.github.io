@@ -1,0 +1,741 @@
+body {
+	width: 100%;
+	margin: 0;
+}
+.wrapper {
+	display: flex;
+	display: -ms-flexbox;
+	flex-direction: column;
+}
+.head {
+	background-image: url('../img/6.jpg');
+	background-size: cover;
+	width: 100%;
+	height: 190px;
+}
+.logo {
+	width: 130px;
+	height: 130px;
+	margin-left: 100px;
+	max-width: 100%;
+}
+.name_blog p {
+	text-transform: uppercase;
+	font-size: 40px;
+	font-weight: 700;
+	font-family: 'Oswald', sans-serif;
+	color: #fff;
+	text-align: center;
+}
+.gallery_1 {
+	display: flex;
+	flex-direction: row;
+	padding: 40px 0 0 0;
+	justify-content: space-around;
+}
+.img_1,
+.img_2,
+.img_3,
+.img_4,
+.img_5,
+.img_6,
+.img_7,
+.img_8,
+.img_9 {
+	position: relative;
+    width: 300px;
+    height: 150px;
+    text-align: center;
+}
+
+.title_zefir,
+.title_cake,
+.title_capcake,
+.title_macarpons {
+	position: absolute;
+    background: rgba(0, 0, 0, 0.85);
+    width: 100%;
+    display:none;
+}
+.title_cake_in_new_year,
+.title_child_cake,
+.title_earth_kulich,
+.title_earth_pryanik,
+.title_pryanik_medic_day {
+	position: relative;
+    background: rgba(0, 0, 0, 0.85);
+    width: 100%;
+    display:none;
+}
+.title_zefir a,
+.title_cake a,
+.title_capcake a,
+.title_macarpons a,
+.title_cake_in_new_year a,
+.title_child_cake a,
+.title_earth_kulich a,
+.title_earth_pryanik a,
+.title_pryanik_medic_day a {
+	position: relative;
+	top: 40%;
+	bottom: 0;
+	color: #fff;
+	font-size: 22px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.img_1:hover .title_zefir,
+.img_2:hover .title_cake,
+.img_3:hover .title_capcake,
+.img_4:hover .title_macarpons,
+.img_5:hover .title_cake_in_new_year,
+.img_6:hover .title_child_cake,
+.img_7:hover .title_earth_kulich,
+.img_8:hover .title_earth_pryanik,
+.img_9:hover .title_pryanik_medic_day {
+    display:block;
+}
+.footer {
+	flex-basis: 100%;
+	background-color: #000;
+}
+.social a {
+	padding: 0 5px;
+}
+@media all and (max-width: 450px) {
+.logo {
+        position: relative;
+		width: 60px;
+	    height: 60px;
+		top: -45px;
+		left: 20px;
+		max-width: 100%;
+		margin-left: 0;
+}
+.name_blog p {
+        margin-top: 60px;
+		font-size: 15px;
+}
+div.scrollup {
+  font-size: 10px; 
+}
+label.hamburger {
+  top: 1px;
+}
+label.hamburger > i:before {
+  margin-top: 7px;
+}
+label.hamburger > i:after {
+  margin-top: -7px;
+}
+input.hamburger:checked ~ .drawer-list {
+  width: 100%;
+}
+.drawer-list ul {
+  margin: 40px 0 0 0;
+  line-height: 50px;
+  font-family: 'Open Sans Condensed';
+}
+.drawer-list ul li a{
+   font-size: 20px;
+   text-align: right;
+}
+.drawer-list li a:hover {
+	cursor: pointer;
+}
+.drawer-list {
+	opacity: 0.9;
+	z-index: 10;
+}
+.gallery_1 {
+	flex-direction: row;
+	padding: 0 0 40px 0;
+	justify-content: none;
+	flex-wrap: wrap;
+}
+.img_1,
+.img_2,
+.img_3,
+.img_4,
+.img_5,
+.img_6,
+.img_7,
+.img_8,
+.img_9 {
+	position: relative;
+	max-width: 100%;
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px 0 0 0;
+    text-align: center;
+
+  
+}
+.title_zefir,
+.title_cake,
+.title_capcake,
+.title_macarpons,
+.title_pryanik_medic_day {
+    height: 45%;
+    top: 30px;
+}
+.title_cake_in_new_year,
+.title_child_cake,
+.title_earth_kulich,
+.title_earth_pryanik {
+	position: absolute;
+    height: 45%;
+    top: 30px;
+}
+}
+@media all and (min-width: 450px) {
+	.logo {
+		width: 80px;
+	    height: 80px;
+		top: -65px;
+		left: 20px;
+		max-width: 100%;
+		margin-left: 0;
+	}
+	.name_blog p {
+		font-size: 20px;
+		margin-top: 50px;
+	}
+.drawer-list {
+	opacity: 0.9;
+	z-index: 10;
+}
+.gallery_1 {
+	flex-direction: row;
+	padding: 40px 0 40px 0;
+	justify-content: none;
+	flex-wrap: wrap;
+}
+.img_1,
+.img_2,
+.img_3,
+.img_4,
+.img_5,
+.img_6,
+.img_7,
+.img_8,
+.img_9 {
+	position: relative;
+	max-width: 100%;
+    width: 350px;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px 0 0 0;
+    text-align: center;
+    
+  
+}
+.title_zefir,
+.title_cake,
+.title_capcake,
+.title_macarpons,
+.title_pryanik_medic_day {
+	position: absolute;
+    height: 45%;
+    top: 30px;
+}
+.title_cake_in_new_year,
+.title_child_cake,
+.title_earth_kulich,
+.title_earth_pryanik {
+	position: absolute;
+    height: 45%;
+    top: 30px;
+}
+}
+@media all and (min-width: 470px) {
+	.head {
+		height: 300px;
+	}
+.logo {
+		width: 90px;
+	    height: 90px;
+		top: -70px;
+		left: 20px;
+		max-width: 100%;
+		margin-left: 0;
+	}
+.name_blog p {
+		font-size: 23px;
+		margin-top: 80px;
+	}
+.gallery_1 {
+	flex-direction: row;
+	padding: 40px 0 30px 0;
+	justify-content: none;
+	flex-wrap: wrap;
+}
+.drawer-list {
+	opacity: 0.9;
+	z-index: 10;
+}
+.img_1,
+.img_2,
+.img_3,
+.img_4,
+.img_5,
+.img_6,
+.img_7,
+.img_8,
+.img_9 {
+	position: relative;
+	max-width: 100%;
+    width: 450px;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px 0 0 0;
+    text-align: center; 
+}
+.title_zefir,
+.title_cake,
+.title_capcake,
+.title_macarpons,
+.title_pryanik_medic_day {
+	position: absolute;
+    height: 45%;
+    top: 30px;
+}
+.title_cake_in_new_year,
+.title_child_cake,
+.title_earth_kulich,
+.title_earth_pryanik {
+	position: absolute;
+    height: 45%;
+    top: 30px;
+}
+.img_1:hover .title_zefir,
+.img_2:hover .title_cake,
+.img_3:hover .title_capcake,
+.img_4:hover .title_macarpons,
+.img_5:hover .title_cake_in_new_year,
+.img_6:hover .title_child_cake,
+.img_7:hover .title_earth_kulich,
+.img_8:hover .title_earth_pryanik {
+    display:block;
+}
+}
+@media all and (min-width: 600px) {
+.head {
+	height: 300px;
+}
+.gallery_1 {
+	flex-direction: row;
+	padding: 10px 0 30px 0;
+	justify-content: none;
+	flex-wrap: wrap;
+}
+.drawer-list {
+	opacity: 0.9;
+	z-index: 10;
+}
+
+.img_1,
+.img_2,
+.img_3,
+.img_4,
+.img_5,
+.img_6,
+.img_7,
+.img_8,
+.img_9 {
+	position: relative;
+	max-width: 100%;
+    width: 290px;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px 0 0 0;
+    text-align: center;  
+}
+.title_zefir,
+.title_cake,
+.title_capcake,
+.title_macarpons,
+.title_pryanik_medic_day {
+	position: absolute;
+    height: 45%;
+    top: 30px;
+}
+.title_cake_in_new_year,
+.title_child_cake,
+.title_earth_kulich,
+.title_earth_pryanik {
+	position: absolute;
+    height: 45%;
+    top: 30px;
+}   
+}
+@media all and (min-width: 700px) {
+.head {
+	height: 330px;
+}
+.name_blog p {
+	font-size: 25px;
+	margin-top: 100px;
+}
+.drawer-list ul li a{
+   font-size: 23px;
+   text-align: right;
+}
+.gallery_1 {
+	flex-direction: row;
+	padding: 10px 0 30px 0;
+	justify-content: none;
+	flex-wrap: wrap;
+}
+.drawer-list {
+	opacity: 0.9;
+	z-index: 10;
+}
+
+.img_1,
+.img_2,
+.img_3,
+.img_4,
+.img_5,
+.img_6,
+.img_7,
+.img_8,
+.img_9 {
+	position: relative;
+	max-width: 100%;
+    width: 320px;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px 0 0 0;
+    text-align: center;  
+}
+.title_zefir,
+.title_cake,
+.title_capcake,
+.title_macarpons,
+.title_pryanik_medic_day {
+	position: absolute;
+    height: 45%;
+    top: 30px;
+}
+.title_cake_in_new_year,
+.title_child_cake,
+.title_earth_kulich,
+.title_earth_pryanik {
+	position: absolute;
+    height: 45%;
+    top: 30px;
+}   
+}
+@media all and (min-width: 800px) {
+.head {
+	height: 300px;
+}
+.logo {
+	width: 100px;
+	height: 100px;
+    top: -75px;
+}
+.name_blog p {
+	font-size: 24px;
+	margin-top: 60px;
+}
+.drawer-list ul li a{
+   font-size: 20px;
+   text-align: right;
+}
+.gallery_1 {
+	flex-direction: row;
+	padding: 10px 0 30px 0;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.drawer-list {
+	opacity: 0.9;
+	z-index: 10;
+}
+.img_1,
+.img_2,
+.img_3,
+.img_4,
+.img_5,
+.img_6,
+.img_7,
+.img_8,
+.img_9 {
+	position: relative;
+    width: 270px;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px 0 0 0;
+    text-align: center;  
+}
+.title_zefir,
+.title_cake,
+.title_capcake,
+.title_macarpons,
+.title_pryanik_medic_day {
+	position: absolute;
+    height: 45%;
+    top: 30px;
+}
+.title_cake_in_new_year,
+.title_child_cake,
+.title_earth_kulich,
+.title_earth_pryanik {
+	position: absolute;
+    height: 45%;
+    top: 30px;
+}   
+}
+@media all and (min-width: 1025px) {
+.logo {
+	width: 130px;
+	height: 130px;
+	left: 70px;
+	top: -25px;
+}
+.head {
+	height: 190px;
+}
+.name_blog p {
+	font-size: 30px;
+	margin-top: -10px;
+}
+.drawer-list ul li a{
+   font-size: 20px;
+   text-align: right;
+   margin-left: -40px;
+    
+}
+.gallery_1 {
+	flex-direction: row;
+	padding: 10px 0 30px 0;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.drawer-list {
+	opacity: 0.9;
+	z-index: 10;
+}
+.img_1,
+.img_2,
+.img_3,
+.img_4,
+.img_5,
+.img_6,
+.img_7,
+.img_8,
+.img_9 {
+	position: relative;
+    width: 270px;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px 0 0 0;
+    text-align: center;  
+}
+.title_zefir,
+.title_cake,
+.title_capcake,
+.title_macarpons,
+.title_pryanik_medic_day {
+	position: absolute;
+    height: 45%;
+    top: 30px;
+}
+.title_cake_in_new_year,
+.title_child_cake,
+.title_earth_kulich,
+.title_earth_pryanik {
+	position: absolute;
+    height: 45%;
+    top: 30px;
+}   
+}
+@media all and (min-width: 1300px) {
+.head {
+	height: 190px;
+}
+.logo {
+	width: 130px;
+	height: 130px;
+	left: 70px;
+	top: -25px;
+}
+.name_blog p {
+	font-size: 40px;
+	margin-top: -50px;
+}
+.drawer-list ul li a {
+   font-size: 25px;
+   text-align: right;
+   margin-left: -40px;
+}
+.gallery_1 {
+	flex-direction: row;
+	padding: 10px 0 30px 0;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.drawer-list {
+	opacity: 0.9;
+	z-index: 10;
+}
+.img_1,
+.img_2,
+.img_3,
+.img_4,
+.img_5,
+.img_6,
+.img_7,
+.img_8,
+.img_9 {
+	position: relative;
+    width: 320px;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px 0 0 0;
+    text-align: center;  
+}
+.title_zefir,
+.title_cake,
+.title_capcake,
+.title_macarpons,
+.title_pryanik_medic_day {
+	position: absolute;
+    height: 45%;
+    top: 30px;
+}
+.title_cake_in_new_year,
+.title_child_cake,
+.title_earth_kulich,
+.title_earth_pryanik {
+	position: absolute;
+    height: 45%;
+    top: 30px;
+}   
+}
+@media all and (min-width: 1700px) {
+.head {
+	height: 190px;
+}
+.logo {
+	width: 160px;
+	height: 160px;
+	left: 70px;
+}
+.name_blog p {
+	font-size: 40px;
+	margin-top: -30px;
+}
+.drawer-list ul {
+  margin: 30px 0 0 0;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.drawer-list ul li a {
+   font-size: 40px;
+   text-align: right;
+   line-height: 100px;
+}
+.gallery_1 {
+	flex-direction: row;
+	padding: 10px 0 30px 0;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.copyright {
+    font-size: 23px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.name_org {
+	font-size: 23px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.drawer-list {
+	opacity: 0.9;
+	z-index: 10;
+}
+.img_1,
+.img_2,
+.img_3,
+.img_4,
+.img_5,
+.img_6,
+.img_7,
+.img_8,
+.img_9 {
+	position: relative;
+    width: 470px;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px 0 0 0;
+    text-align: center;  
+}
+.title_zefir,
+.title_cake,
+.title_capcake,
+.title_macarpons,
+.title_pryanik_medic_day {
+	position: absolute;
+    height: 45%;
+    top: 30px;
+}
+.title_cake_in_new_year,
+.title_child_cake,
+.title_earth_kulich,
+.title_earth_pryanik {
+	position: absolute;
+    height: 45%;
+    top: 30px;
+}  
+.title_zefir a,
+.title_cake a,
+.title_capcake a,
+.title_macarpons a,
+.title_cake_in_new_year a,
+.title_child_cake a,
+.title_earth_kulich a,
+.title_earth_pryanik a,
+.title_pryanik_medic_day a {
+	top: 40%;
+	font-size: 42px;
+} 
+.social img {
+	width: 40px;
+	height: 40px;
+}
+}
+@media all and (min-width: 1800px) {
+.name_org {
+	font-size: 23px;
+}
+.copyright {
+	font-size: 23px;
+}
+.drawer-list ul li a{
+   font-size: 40px;
+   text-align: right;
+   margin-left: 0;
+   line-height: 90px;
+   font-family: 'Open Sans Condensed', sans-serif;
+}
+.name_blog p {
+  font-size: 45px;
+  margin-top: -10px;
+}
+.title_zefir a,
+.title_cake a,
+.title_capcake a,
+.title_macarpons a,
+.title_cake_in_new_year a,
+.title_child_cake a,
+.title_earth_kulich a,
+.title_earth_pryanik a,
+.title_pryanik_medic_day a  {
+	line-height: 40px;
+}
+}
