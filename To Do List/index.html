@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<div class="container">
+	<h3>ToDoList</h3>
+		<div class="top-line">
+			<div class="top">
+			<input maxlength="20" type="text" placeholder="Добавить задание" class="add-task">
+			<textarea maxlength="20" placeholder="Добавить описание" class="description-field"></textarea>
+			<input type="date" class="add-date" >
+			<input type="time" class="add-time">
+			<button class="add-task-btn" id="add_task">Добавить</button>
+			
+			<button class="export">
+					Выгрузить
+			</button>
+			<button class="import">
+					Загрузить
+			</button>
+		</div>
+		</div>
+		<hr>
+		<div class="middle-line">
+			<div class="item">
+				<input type="checkbox"  id="test1">
+				<label>Покормить рыбок</label>
+				<input type="text" name="text" placeholder="Покормить рыбок">
+					<i class="fa fa-pencil" aria-hidden="true"></i>
+				<button class="important">
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+				</button>
+				<button class="remove-item">
+					<i class="fa fa-trash" aria-hidden="true"></i>
+				</button>
+				<div class="description" contenteditable="true">Ещё поменять воду</div>
+				<div class="date" contenteditable="true">Создано: <span>2017-09-01 в 23:00</span></div>
+
+
+			</div>
+			<div class="item">
+				<input type="checkbox" id="test2">
+				<label>Покормить кота</label>
+				<input type="text" name="text" placeholder="Покормить кота">
+					<i class="fa fa-pencil" aria-hidden="true"></i>	
+				<button class="important">
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+				</button>
+				<button class="remove-item">
+					<i class="fa fa-trash" aria-hidden="true"></i>
+				</button>
+				<div class="description" contenteditable="true">Корм в тумбочке</div>
+				<div class="date" contenteditable="true">Создано: <span>2017-09-02 в 13:00</span></div>
+				
+
+			</div>
+			<div class="item">
+				<input type="checkbox" id="test3">
+				<label>Встреча с мамой</label>
+				<input type="text" name="text" placeholder="Встреча с мамой">
+					<i class="fa fa-pencil" aria-hidden="true"></i>
+				
+				<button class="important">
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+				</button>
+				<button class="remove-item">
+					<i class="fa fa-trash" aria-hidden="true"></i>
+				</button>
+				<div class="description" contenteditable="true">ул.М.Богдановича 26</div>
+				<div class="date" contenteditable="true">Создано: <span>2017-09-03 в 12:30</span></div>
+				
+
+			</div>
+			<div class="item">
+			
+				<input type="checkbox" id="test4">
+				<label>День Рождения</label>
+				<input type="text" name="text" placeholder="День Рождения">
+					<i class="fa fa-pencil" aria-hidden="true"></i>
+				
+				<button class="important">
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+				</button>
+				<button class="remove-item">
+					<i class="fa fa-trash" aria-hidden="true"></i>
+				</button>
+				<div class="description" contenteditable="true">Клуб Богема</div>
+				<div class="date" contenteditable="true">Создано: <span>2017-09-04 в 00:00</span></div>
+				
+
+			</div>
+			</div>
+		
+	</div>
+	<div class="container2">
+	<h3>Complete</h3>
+		<div class="middle-line">
+		
+			
+		</div>
+	</div>
+	</div>
+	
+	<script
+  src="http://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
