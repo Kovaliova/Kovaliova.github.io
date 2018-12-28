@@ -794,6 +794,9 @@ h2.main_info {
   flex-direction: row;
   align-items: center;
 }
+.scroll-down {
+  margin-top: -10px;
+}
 }
 @media all and (min-width: 1360px) {
 .image {
