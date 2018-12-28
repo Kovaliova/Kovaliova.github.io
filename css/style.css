@@ -673,7 +673,7 @@ p {
 }
 @media all and (min-width: 360px){
 .image {
-  width: 50%;
+  width: 70%;
 }
 .conteiner p {
   font-size: 26px;
