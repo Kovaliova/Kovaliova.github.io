@@ -256,7 +256,6 @@ p {
 
 .scroll-down {
   position: absolute;
-  bottom: 100px;
   left: 50%;
   margin-left: -16px;
   display: block;
@@ -871,13 +870,11 @@ h2.main_info {
   position: relative;
   top: 20px;
 }
+
 }
 @media all and (min-width: 1800px){
 .image {
   width: 16%;
-}
-.scroll-down {
-  bottom: 290px;
 }
 }
 @media all and (min-width: 1950px) {
@@ -887,9 +884,7 @@ h2.main_info {
 .main_info {
   font-size: 50px;
 }
-.scroll-down {
-  bottom: 400px;
-}
+
 .container {
   min-width: 1500px;
 }
