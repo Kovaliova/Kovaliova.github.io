@@ -23,7 +23,7 @@ body {
 	font-size: 16px;
 }
 #particle-canvas {
-  width: 97%;
+  width: 99.9%;
   height: 20%;
 }
 .container {
@@ -39,9 +39,8 @@ h1 {
 }
 
 
-.sidebar {
+.left-sidebar {
     text-align: center;
-    padding-bottom: 40px;
 }
 button {
     width: 160px;
@@ -65,8 +64,5 @@ p {
 h6{
 	font-family: 'Questrial', sans-serif;
 	font-size: 25px;
-	text-align: center;
-}
-td {
 	text-align: center;
 }

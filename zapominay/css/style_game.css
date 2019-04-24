@@ -345,25 +345,10 @@ body {
                 margin: 0 auto;
 
                 
-                -webkit-animation: anim 2s;
-                animation: anim 2s;
+                -webkit-animation: myanim 2s;
+                animation: myanim 2s;
             }
-             @-webkit-keyframes anim {
-            0%   {transform: rotate (0deg);
-                -moz-transform: rotate(0deg);
-                -ms-transform: rotate(0deg);
-                -webkit-transform: rotate(0deg);
-                -o-transform: rotate(0deg);
-                width: 90px;
-                height: 15px;
-                font-size: 6px;}
-
-            100% {transform: rotate (1080deg);
-                -moz-transform: rotate(1080deg);
-                -ms-transform: rotate(1080deg);
-                -webkit-transform: rotate(1080deg);
-                -o-transform: rotate(1080deg);}
-        }
+            
             div#memory_info {
                 position: relative;
                 padding: 0;
