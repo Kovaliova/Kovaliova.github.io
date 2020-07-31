@@ -831,8 +831,6 @@ h2.main_info {
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  padding: 0 30px;
 }
 .contact h3 {
   font-size: 25px;
