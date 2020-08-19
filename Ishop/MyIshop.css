@@ -43,12 +43,19 @@
 
 .MyIshop .Answers .Answer .Price
 {
-  width: 30px;
+  position: absolute;
+  left: 185px;
   font-weight: bold;
-  text-align: right;
+  
+}
+
+.MyIshop .Answers .Answer .Price
+{
+  position: absolute;
+  left: 300px;
 }
 
 .MyIshop .Answers .Answer .Text
 {
-  margin-right: 30px;
+  position: relative;
 }
