@@ -25,6 +25,9 @@
 
 .MyIshop .Answers .Answer
 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   padding: 2px 0;
 }
 
@@ -38,7 +41,6 @@
 
 .MyIshop .Answers .Answer .Price
 {
-  float: left;
   width: 30px;
   font-weight: bold;
   text-align: right;
