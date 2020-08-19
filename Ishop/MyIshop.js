@@ -1,12 +1,26 @@
-var MyIshop = React.createClass({
+var VotesBlock = React.createClass({
 
-    displayName: 'MyIshop',
+    displayName: 'VotesBlock',
   
-    render: function(){
+    getDefaultProps: function() {
+      return { question: "Вопрос ни о чём" }
+    },
   
-      return React.DOM.div( {className:'MyIshopFrame'}, 
-        React.DOM.h1( null, "Всем привет!" ),
-        React.DOM.div( {className:'MyIshopText'}, "Начинаем изучение React!" ),
+    render: function() {
+  
+      var answersCode=[];
+      for ( var a=0; a<this.props.answers.length; a++ ) {
+        var answer=this.props.answers[a];
+        var answerCode=        
+          React.DOM.div({key:answer.code,className:'Answer'},
+            React.DOM.span({className:'Count'},answer.count),
+            React.DOM.span({className:'Text'},answer.text),
+          );
+        answersCode.push(answerCode);
+      }
+      return React.DOM.div( {className:'VotesBlock'}, 
+        React.DOM.div( {className:'Question'}, this.props.question ),
+        React.DOM.div( {className:'Answers'}, answersCode ),
       );
     },
   
