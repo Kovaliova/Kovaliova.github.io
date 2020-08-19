@@ -38,7 +38,7 @@
 
 .MyIshop .Answers .Answer .Price
 {
-  float: right;
+  float: left;
   width: 30px;
   font-weight: bold;
   text-align: right;
