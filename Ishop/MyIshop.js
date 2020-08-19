@@ -16,7 +16,7 @@ var MyIshop = React.createClass({
           );
         answersCode.push(answerCode);
       }
-      return React.DOM.div( {className:'VotesBlock'}, 
+      return React.DOM.div( {className:'MyIshop'}, 
         React.DOM.div( {className:'Question'}, this.props.question ),
         React.DOM.div( {className:'Answers'}, answersCode ),
       );
