@@ -11,7 +11,7 @@ var MyIshop = React.createClass({
           React.DOM.div({key:answer.code,className:'Answer'},
             React.DOM.span({className:'Text'},answer.text),
             React.DOM.span({className:'Price'},answer.price),
-            React.DOM.span({className:'Url'},answer.url),
+            React.DOM.a({className:'Url'},answer.url),
             React.DOM.span({className:'Count'},answer.count),
           );
         answersCode.push(answerCode);
