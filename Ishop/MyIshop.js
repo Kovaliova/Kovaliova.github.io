@@ -1,6 +1,6 @@
-var VotesBlock = React.createClass({
+var MyIshop = React.createClass({
 
-    displayName: 'VotesBlock',
+    displayName: 'MyIshop',
   
     getDefaultProps: function() {
       return { question: "Вопрос ни о чём" }
