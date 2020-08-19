@@ -4,17 +4,17 @@ var MyIshop = React.createClass({
   
     render: function() {
   
-      var answersCode=[];
-      for ( var a=0; a<this.props.answers.length; a++ ) {
-        var answer=this.props.answers[a];
-        var answerCode=        
-          React.DOM.div({key:answer.code,className:'Answer'},
+      var propertyProduct=[];
+      propertyProduct.forEach(myFunction);
+      function myFunction() {
+        var propertyProducts=        
+          React.DOM.div({key:propertyProduct,className:'Answer'},
             React.DOM.span({className:'Text'},answer.text),
             React.DOM.span({className:'Price'},answer.price),
-            React.DOM.a({className:'Url'},answer.url),
+            React.DOM.span({className:'Url'},answer.url),
             React.DOM.span({className:'Count'},answer.count),
           );
-        answersCode.push(answerCode);
+        propertyProduct.push(propertyProducts);
       }
       return React.DOM.div( {className:'MyIshop'}, 
         React.DOM.div( {className:'Question'}, this.props.question ),
@@ -24,7 +24,7 @@ var MyIshop = React.createClass({
             React.DOM.span( {className:'Url'}, this.props.url ),
             React.DOM.span( {className:'Count'}, this.props.count ),
         this.props.characteristic ),
-        React.DOM.div( {className:'Answers'}, answersCode ),
+        React.DOM.div( {className:'Answers'}, propertyProduct ),
       );
     },
   
