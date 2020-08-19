@@ -11,6 +11,12 @@
   font-weight: bold;
 }
 
+.MyIshop .Characteristic
+{
+    display: flex;
+    flex-direction: row;
+}
+
 .MyIshop .Answers
 {
   padding-top: 5px;

@@ -18,10 +18,13 @@ var MyIshop = React.createClass({
       }
       return React.DOM.div( {className:'MyIshop'}, 
         React.DOM.div( {className:'Question'}, this.props.question ),
-        React.DOM.div( {className:'Price'}, this.props.price ),
-        React.DOM.div( {className:'Name'}, this.props.name ),
-        React.DOM.div( {className:'Url'}, this.props.url ),
-        React.DOM.div( {className:'Count'}, this.props.count ),
+        React.DOM.div( {className:'Characteristic'}, 
+            React.DOM.span( {className:'Price'}, this.props.price ),
+            React.DOM.span( {className:'Name'}, this.props.name ),
+            React.DOM.span( {className:'Url'}, this.props.url ),
+            React.DOM.span( {className:'Count'}, this.props.count ),
+        
+        this.props.Characteristic ),
         React.DOM.div( {className:'Answers'}, answersCode ),
       );
     },
