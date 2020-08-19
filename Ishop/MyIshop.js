@@ -4,27 +4,27 @@ var MyIshop = React.createClass({
   
     render: function() {
   
-      var propertyProduct=[];
-      propertyProduct.forEach(myFunction);
-      function myFunction() {
-        var propertyProducts=        
-          React.DOM.div({key:propertyProduct,className:'Answer'},
-            React.DOM.span({className:'Text'},answer.text),
-            React.DOM.span({className:'Price'},answer.price),
-            React.DOM.span({className:'Url'},answer.url),
-            React.DOM.span({className:'Count'},answer.count),
+      var productCode=[];
+      this.props.products.forEach(function (item){ 
+        var productCode=        
+          React.DOM.tr({key:item.Code,className:'Table'},
+            React.DOM.td({className:'Name'},item.nameProduct),
+            React.DOM.td({className:'Price'},item.priceProduct),
+            React.DOM.td({className:'Url'},item.urlProduct),
+            React.DOM.td({className:'Count'},item.countProduct),
           );
-        propertyProduct.push(propertyProducts);
-      }
-      return React.DOM.div( {className:'MyIshop'}, 
-        React.DOM.div( {className:'Question'}, this.props.question ),
-        React.DOM.div( {className:'Characteristic'}, 
-            React.DOM.span( {className:'Name'}, this.props.name ),
-            React.DOM.span( {className:'Price'}, this.props.price ),
-            React.DOM.span( {className:'Url'}, this.props.url ),
-            React.DOM.span( {className:'Count'}, this.props.count ),
-        this.props.characteristic ),
-        React.DOM.div( {className:'Answers'}, propertyProduct ),
+        productCode.push(productsCode);
+      });
+      return React.DOM.table( {className:'MyIshop'}, 
+        React.DOM.h1( {className:'HeadName'}, this.props.name ),
+        React.DOM.thead( {className:'CharacteristicHead'},
+          React.DOM.tr( {className:'TableRow'},
+            React.DOM.td( {className:'TableCell'}, "Name" ),
+            React.DOM.td( {className:'TableCell'}, "Price" ),
+            React.DOM.td( {className:'TableCell'}, "Url" ),
+            React.DOM.td( {className:'TableCell'}, "Count" )
+        )),
+        React.DOM.div( {className:'Products'}, productCode ),
       );
     },
   

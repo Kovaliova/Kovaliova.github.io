@@ -1,61 +1,28 @@
 .MyIshop
 {
-  border: double gray 3px;
-  width: 600px;
-  padding: 3px 7px;
-  background-color: #F0F0F0;
+  border-collapse: collapse;
 }
 
-.MyIshop .Question
+.MyIshop .HeadName
 {
+  font-size: 40px;
   text-align: center;
   font-weight: bold;
 }
 
-.MyIshop .Characteristic
+.MyIshop .TableRow
 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 20px;
+    border: solid 1px black;
+    padding: 20px;
 }
 
-.MyIshop .Answers
+.MyIshop .CharacteristicHead
 {
-  padding-top: 5px;
+    font-size: 40px;
+    font-weight: bold;
 }
 
-.MyIshop .Answers .Answer
+.MyIshop .TableRow .TableCell
 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  padding: 2px 0;
-}
-
-.MyIshop .Answers .Answer .Count
-{
-  float: right;
-  width: 30px;
-  font-weight: bold;
-  text-align: right;
-}
-
-.MyIshop .Answers .Answer .Price
-{
-  position: absolute;
-  left: 180px;
-  font-weight: bold;
-  
-}
-
-.MyIshop .Answers .Answer .Url
-{
-  position: absolute;
-  left: 300px;
-}
-
-.MyIshop .Answers .Answer .Text
-{
-  position: relative;
+    text-transform: uppercase;
 }
