@@ -20,14 +20,17 @@
 
 .MyIshop .Answers
 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
   padding-top: 5px;
+}
+
+.MyIshop .Answers .Answer
+{
+  padding: 2px 0;
 }
 
 .MyIshop .Answers .Answer .Count
 {
+  float: right;
   width: 30px;
   font-weight: bold;
   text-align: right;
@@ -35,8 +38,13 @@
 
 .MyIshop .Answers .Answer .Price
 {
-
+  float: right;
   width: 30px;
   font-weight: bold;
   text-align: right;
+}
+
+.MyIshop .Answers .Answer .Text
+{
+  margin-right: 30px;
 }
