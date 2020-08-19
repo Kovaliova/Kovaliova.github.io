@@ -44,12 +44,12 @@
 .MyIshop .Answers .Answer .Price
 {
   position: absolute;
-  left: 185px;
+  left: 180px;
   font-weight: bold;
   
 }
 
-.MyIshop .Answers .Answer .Price
+.MyIshop .Answers .Answer .Url
 {
   position: absolute;
   left: 300px;
