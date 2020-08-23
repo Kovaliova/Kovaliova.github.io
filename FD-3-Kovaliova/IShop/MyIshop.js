@@ -13,10 +13,10 @@ var MyIshop = React.createClass({
       this.props.products.forEach(function (item){ 
         var productsCode=        
           React.DOM.tr({key:item.code,className:'Table'},
-            React.DOM.td({className:'NameProd'},item.nameProduct),
-            React.DOM.td({className:'PriceProd'},item.priceProduct),
-            React.DOM.td({className:'UrlProd'},item.urlProduct),
-            React.DOM.td({className:'CountProd'},item.countProduct),
+            React.DOM.td({className:'Name'},item.nameProduct),
+            React.DOM.td({className:'Price'},item.priceProduct),
+            React.DOM.td({className:'Url'},item.urlProduct),
+            React.DOM.td({className:'Count'},item.countProduct),
           );
         productCode.push(productsCode);
       });
