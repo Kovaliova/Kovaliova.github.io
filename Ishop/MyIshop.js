@@ -20,8 +20,8 @@ var MyIshop = React.createClass({
         React.DOM.thead( {className:'CharacteristicHead'},
           React.DOM.tr( {className:'TableRow'},
             React.DOM.td( {className:'TableCell'}, "Name" ),
-            React.DOM.td( {className:'TableCell'}, "Price" ),
-            React.DOM.td( {className:'TableCell'}, "Url,$" ),
+            React.DOM.td( {className:'TableCell'}, "Price,$" ),
+            React.DOM.td( {className:'TableCell'}, "Url" ),
             React.DOM.td( {className:'TableCell'}, "Count" )
         )),
         React.DOM.tbody( {className:'Products'}, productCode ),
