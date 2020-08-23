@@ -16,7 +16,7 @@ var MyIshop = React.createClass({
         productCode.push(productsCode);
       });
       return React.DOM.table( {className:'MyIshop'}, 
-        React.DOM.h1( {className:'HeadName'}, this.props.name ),
+        React.DOM.caption( {className:'HeadName'}, this.props.name ),
         React.DOM.thead( {className:'CharacteristicHead'},
           React.DOM.tr( {className:'TableRow'},
             React.DOM.td( {className:'TableCell'}, "Name" ),
