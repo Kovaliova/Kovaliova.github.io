@@ -27,8 +27,11 @@
     width: 30%;
     text-transform: uppercase;
 }
-.MyIshop .Table .Price,
-.MyIshop .Table .Count
+.MyIshop .Table .Price
 {
   padding: 0 15px 0 15px;
+}
+.MyIshop .Table .Count
+{
+  padding: 0 30px 0 30px;
 }
