@@ -8,7 +8,7 @@ var MyIshop = React.createClass({
       var productCode=[];
       this.props.products.forEach(function (item){ 
         var productsCode=        
-          React.DOM.tr({key:item.Code,className:'Table'},
+          React.DOM.tr({key:item.code,className:'Table'},
             React.DOM.td({className:'NameProd'},item.nameProduct),
             React.DOM.td({className:'PriceProd'},item.priceProduct),
             React.DOM.td({className:'UrlProd'},item.urlProduct),
