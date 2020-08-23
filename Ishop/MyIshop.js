@@ -10,9 +10,7 @@ var MyIshop = React.createClass({
           React.DOM.tr({key:item.Code,className:'Table'},
             React.DOM.td({className:'Name'},item.nameProduct),
             React.DOM.td({className:'Price'},item.priceProduct),
-            React.DOM.td({className:'Url'},
-               React.DOM.img({src: `${this.props.urlProduct}`, alt: this.props.name})
-          ),
+            React.DOM.td({className:'Url'},item.urlProduct),
             React.DOM.td({className:'Count'},item.countProduct),
           );
         productCode.push(productsCode);
