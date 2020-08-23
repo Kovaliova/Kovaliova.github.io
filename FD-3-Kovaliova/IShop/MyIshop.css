@@ -1,0 +1,49 @@
+.MyIshop
+{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.MyIshop .HeadName
+{
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+
+.MyIshop .TableRow
+{
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.MyIshop .CharacteristicHead
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.MyIshop .TableRow .TableCell
+{
+    width: 30%;
+    text-transform: uppercase;
+}
+.MyIshop .Table .Price
+{
+  padding: 0 25px 0 25px;
+}
+.MyIshop .Table .Count
+{
+  padding: 0 30px 0 30px;
+}
+.MyIshop .Products 
+{
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.MyIshop .Products .Table
+{
+  border-bottom: 1px solid black;
+}
