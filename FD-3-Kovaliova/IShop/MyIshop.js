@@ -2,7 +2,11 @@ var MyIshop = React.createClass({
 
     displayName: 'MyIshop',
 
-  
+    propTypes: {
+      name: React.PropTypes.string.isRequired,
+      products: React.PropTypes.array.isRequired,
+  },
+
     render: function() {
   
       var productCode=[];
