@@ -24,5 +24,6 @@
 
 .MyIshop .TableRow .TableCell
 {
+    width: 30%;
     text-transform: uppercase;
 }

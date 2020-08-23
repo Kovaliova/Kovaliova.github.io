@@ -24,7 +24,7 @@ var MyIshop = React.createClass({
             React.DOM.td( {className:'TableCell'}, "Url" ),
             React.DOM.td( {className:'TableCell'}, "Count" )
         )),
-        React.DOM.div( {className:'Products'}, productCode ),
+        React.DOM.tbody( {className:'Products'}, productCode ),
       );
     },
   
