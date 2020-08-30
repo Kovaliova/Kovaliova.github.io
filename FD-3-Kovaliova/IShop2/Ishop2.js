@@ -1,36 +1,49 @@
-var MyIshop = React.createClass({
+var Ishop2 = React.createClass({
 
-    displayName: 'MyIshop',
+    displayName: 'Ishop2',
 
     propTypes: {
-      name: React.PropTypes.string.isRequired,
-      products: React.PropTypes.array.isRequired,
-  },
-
-    render: function() {
-  
-      var productCode=[];
-      this.props.products.forEach(function (item){ 
-        var productsCode=        
-          React.DOM.tr({key:item.code,className:'Table'},
-            React.DOM.td({className:'Name'},item.nameProduct),
-            React.DOM.td({className:'Price'},item.priceProduct),
-            React.DOM.td({className:'Url'},item.urlProduct),
-            React.DOM.td({className:'Count'},item.countProduct),
-          );
-        productCode.push(productsCode);
-      });
-      return React.DOM.table( {className:'MyIshop'}, 
-        React.DOM.caption( {className:'HeadName'}, this.props.name ),
-        React.DOM.thead( {className:'CharacteristicHead'},
-          React.DOM.tr( {className:'TableRow'},
-            React.DOM.td( {className:'TableCell'}, "Name" ),
-            React.DOM.td( {className:'TableCell'}, "Price" ),
-            React.DOM.td( {className:'TableCell'}, "Url" ),
-            React.DOM.td( {className:'TableCell'}, "Count" )
-        )),
-        React.DOM.tbody( {className:'Products'}, productCode ),
-      );
+        products: React.PropTypes.arrayOf(
+            React.PropTypes.shape({
+                code: React.PropTypes.number.isRequired,
+                nameProduct: React.PropTypes.string.isRequired,
+                priceProduct: React.PropTypes.string.isRequired,
+                countProduct: React.PropTypes.number.isRequired,
+                urlProduct: React.PropTypes.string.isRequired
+            })
+        ),
     },
-  
-  });
+    getInitialState: function () {
+        return {
+            products:this.props.products,
+            selected:null
+        };
+    },
+    deleteItemFromList: function(id){
+        let productsList = this.state.products;
+        productsList = productsList.filter(item => item.id !== id);
+        this.setState({products:productsList});
+    },
+    selectProduct:function(id){
+        this.setState({selected: id});
+    },
+    render: function () {
+        let productBlocks = this.state.products.map(item =>
+            React.createElement(Product, {key: item.id, src: item.urlPictures,
+                productName: item.productName, price: item.price, count: item.count,id:item.id,
+                buttonFunct:this.deleteItemFromList,select:this.selectProduct,selectedLine:this.state.selected
+            }),
+        );
+        return React.DOM.div({className: 'Ishop2'},
+            React.DOM.table({className: 'ProductsTable'},
+                React.DOM.thead(null,
+                    React.DOM.tr(null,
+                        React.DOM.td(null,'Name'),
+                        React.DOM.td(null, 'Price'),
+                        React.DOM.td(null, 'URL'),
+                        React.DOM.td(null, 'Count'),
+                        React.DOM.td(null, 'Control'))),
+                React.DOM.tbody(null,
+            productBlocks)));
+    },
+});
