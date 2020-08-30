@@ -1,78 +1,66 @@
 var ProductList = React.createClass({
-  
-    displayName: 'ProductList',
-  
-    getDefaultProps: function() {
-      return {
 
-        emptyFallbackPhrase: 'Товаров больше не осталось'
-      }
-    },
-  
-    getInitialState: function() {
-      return {
-        productList: this.props.productList,
-        selectedProduct: null
-      }
-    },
-  
-    userConfirmation: function(prodToDelete) {
-      return confirm(`Вы действительно хотите удалить ${prodToDelete.name}`);
-    },
-  
-    onProductDelete: function(prodToDelete) {
-      if (!this.userConfirmation(prodToDelete)) {
-        return false;
-      }
-      const filteredLis = this.state.productList.filter((product) => {
-        return prodToDelete.id !== product.id
-      });
-  
-      this.setState({productList: filteredLis});
-    },
-  
-    onProductClick: function(productId) {
-      this.setState({selectedProduct: productId})
-    },
-  
-    propTypes: {
-      nameShop: React.PropTypes.string.isRequired,
-      propductList: React.PropTypes.arrayOf(
-        React.PropTypes.shape({
+  displayName: 'ProductList',
+
+  propTypes: {
+    name: React.PropTypes.string.isRequired,
+    products: React.PropTypes.array.isRequired,
+    head: React.PropTypes.arrayOf(React.PropTypes.string.isRequired),
+    articles: React.PropTypes.arrayOf(
+      React.PropTypes.shape({
           code: React.PropTypes.string.isRequired,
-          nameProduct: React.PropTypes.string.isRequired,
-          priceProduct: React.PropTypes.number.isRequired,
-          urlProduct: React.PropTypes.string.isRequired,
-          countProduct: React.PropTypes.number.isRequired,
-          selectedProduct: React.PropTypes.string
-        })
-      )
-    },
-    
-    render: function () {
-  
-      return React.DOM.div({className: 'product'},
-        React.DOM.h1({className: 'headName'}, this.props.headName),
-        React.DOM.table({className: 'product__table'},
-          React.DOM.tbody(null,
-            this.state.productList.length ?
-            this.state.productList.map((prod) => {
-              return React.createElement(ProductItem, {
-                сode: prod.code,
-                nameProduct: prod.nameProduct,
-                priceProduct: prod.priceProduct,
-                urlProduct: prod.urlProduct,
-                countProduct: prod.countProduct,
-                cbSelected: this.onProductClick,
-                selectedProduct: this.state.selectedProduct,
-                cbDeleted: this.onProductDelete
-              })
-            })
-            : React.DOM.tr({className: 'product__item product__item--empty'},
-              React.DOM.td({}, this.props.emptyFallbackPhrase)
-              )
-          )
-        )
-      )
-    }
-  });
+          name: React.PropTypes.string.isRequired,
+          url: React.PropTypes.any.isRequired,
+          count: React.PropTypes.number.isRequired,
+          price: React.PropTypes.number.isRequired
+      })
+  )
+},
+
+getInitialState: function(){
+  return{
+      selectedItem: null,
+      itemsList: this.props.articles,
+  }
+},
+selectedItemCode: function(code){
+  this.setState({selectedItem:code});
+},
+delete: function(code,EO){
+  if(confirm('Вы действительно хотите удалить этот товар?')) {
+      this.setState({itemsList: this.state.itemsList.filter(item => item.code!= code)})
+  } else {
+      EO.preventDefault();
+      EO.stopPropagation();
+  }
+},
+
+  render: function() {
+
+    var items = this.state.itemsList.map(item =>
+      React.createElement(ProductItem,{
+          key:item.code,
+          code:item.code,
+          name:item.nameProduct,
+          url:item.urlProduct,
+          count:item.count,
+          price:item.priceProduct,
+          isSelected:(this.state.selectedItem==item.code),
+          cbSelectedItemCode: this.selectedItemCode,
+          cbDelete: this.delete
+      })
+);
+    return React.DOM.table( {className:'MyIshop'}, 
+      React.DOM.caption( {className:'HeadName'}, this.props.name ),
+      React.DOM.thead( {className:'CharacteristicHead'},
+        React.DOM.tr( {className:'TableRow'},
+          React.DOM.td( {className:'TableCell'}, "Name" ),
+          React.DOM.td( {className:'TableCell'}, "Price" ),
+          React.DOM.td( {className:'TableCell'}, "Url" ),
+          React.DOM.td( {className:'TableCell'}, "Count" )
+      )),
+      React.DOM.tbody( {className:'Products'}, productCode ),
+    );
+  },
+
+});
