@@ -7,11 +7,11 @@ var ProductItem = React.createClass({
     },
   
     propTypes: {
-      id: React.PropTypes.string.isRequired,
-      name: React.PropTypes.string.isRequired,
-      price: React.PropTypes.number.isRequired,
-      Url: React.PropTypes.string.isRequired,
-      Count: React.PropTypes.number.isRequired,
+      code: React.PropTypes.string.isRequired,
+      nameProduct: React.PropTypes.string.isRequired,
+      priceProduct: React.PropTypes.number.isRequired,
+      urlProduct: React.PropTypes.string.isRequired,
+      countProduct: React.PropTypes.number.isRequired,
       selectedProduct: React.PropTypes.string,
       highlightProduct: React.PropTypes.func,
       deleteProduct: React.PropTypes.func

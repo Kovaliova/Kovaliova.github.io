@@ -39,11 +39,11 @@ var ProductList = React.createClass({
       shopName: React.PropTypes.string.isRequired,
       propductList: React.PropTypes.arrayOf(
         React.PropTypes.shape({
-          id: React.PropTypes.string.isRequired,
-          name: React.PropTypes.string.isRequired,
-          price: React.PropTypes.number.isRequired,
-          url: React.PropTypes.string.isRequired,
-          count: React.PropTypes.number.isRequired,
+          code: React.PropTypes.string.isRequired,
+          nameProduct: React.PropTypes.string.isRequired,
+          priceProduct: React.PropTypes.number.isRequired,
+          urlProduct: React.PropTypes.string.isRequired,
+          countProduct: React.PropTypes.number.isRequired,
           selectedProduct: React.PropTypes.string
         })
       )
@@ -52,7 +52,7 @@ var ProductList = React.createClass({
     render: function () {
   
       return React.DOM.div({className: 'product'},
-        React.DOM.h1({className: 'shopName'}, this.props.shopName),
+        React.DOM.h1({className: 'headName'}, this.props.headName),
         React.DOM.table({className: 'product__table'},
           React.DOM.tbody(null,
             this.state.productList.length ?
