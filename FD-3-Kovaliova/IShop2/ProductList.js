@@ -4,7 +4,7 @@ var ProductList = React.createClass({
   
     getDefaultProps: function() {
       return {
-        headName: 'AppleService',
+
         emptyFallbackPhrase: 'Товаров больше не осталось'
       }
     },
@@ -58,7 +58,6 @@ var ProductList = React.createClass({
             this.state.productList.length ?
             this.state.productList.map((prod) => {
               return React.createElement(ProductItem, {
-                key: prod.id,
                 сode: prod.code,
                 nameProduct: prod.nameProduct,
                 priceProduct: prod.priceProduct,
