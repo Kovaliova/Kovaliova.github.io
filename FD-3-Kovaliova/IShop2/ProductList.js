@@ -4,7 +4,7 @@ var ProductList = React.createClass({
   
     getDefaultProps: function() {
       return {
-        nameShop: 'iShop',
+        headName: 'AppleService',
         emptyFallbackPhrase: 'Товаров больше не осталось'
       }
     },
