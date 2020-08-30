@@ -4,7 +4,6 @@ var ProductList = React.createClass({
 
   propTypes: {
     name: React.PropTypes.string.isRequired,
-    products: React.PropTypes.array.isRequired,
     head: React.PropTypes.arrayOf(React.PropTypes.string.isRequired),
     articles: React.PropTypes.arrayOf(
       React.PropTypes.shape({
