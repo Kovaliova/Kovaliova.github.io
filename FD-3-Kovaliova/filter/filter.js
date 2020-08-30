@@ -1,6 +1,6 @@
-var filter = React.createClass({
+var Filter = React.createClass({
 
-    displayName: 'filter',
+    displayName: 'Filter',
 
     propTypes: {
         textArray: React.PropTypes.arrayOf(React.PropTypes.string)
