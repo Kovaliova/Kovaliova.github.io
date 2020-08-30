@@ -1,6 +1,6 @@
-var ListIshop2 = React.createClass({
+var ProductList = React.createClass({
   
-    displayName: 'ListIshop2',
+    displayName: 'ProductList',
   
     getDefaultProps: function() {
       return {
@@ -42,8 +42,8 @@ var ListIshop2 = React.createClass({
           id: React.PropTypes.string.isRequired,
           name: React.PropTypes.string.isRequired,
           price: React.PropTypes.number.isRequired,
-          Url: React.PropTypes.string.isRequired,
-          Count: React.PropTypes.number.isRequired,
+          url: React.PropTypes.string.isRequired,
+          count: React.PropTypes.number.isRequired,
           selectedProduct: React.PropTypes.string
         })
       )
@@ -62,8 +62,8 @@ var ListIshop2 = React.createClass({
                 id: prod.id,
                 name: prod.name,
                 price: prod.price,
-                Url: prod.picUrl,
-                Count: prod.balance,
+                url: prod.url,
+                count: prod.count,
                 cbSelected: this.onProductClick,
                 selectedProduct: this.state.selectedProduct,
                 cbDeleted: this.onProductDelete
