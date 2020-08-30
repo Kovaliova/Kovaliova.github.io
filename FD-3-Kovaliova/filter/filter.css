@@ -1,6 +1,6 @@
 .FilterBlock .FilterText {
     overflow-y:auto;
-    width: 160px;
+    width: 150px;
     height: 150px;
     padding: 5px;
     border: solid 1px black;
@@ -8,5 +8,5 @@
 }
 
 .FilterBlock .FilterCheckbox, .FilterBlock .FilterInput, .FilterBlock .FilterResetBtn {
-   margin-right: 10px;
+   margin-right: 5px;
 }
