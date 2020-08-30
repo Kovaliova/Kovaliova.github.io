@@ -4,7 +4,7 @@ var ProductList = React.createClass({
   
     getDefaultProps: function() {
       return {
-        shopName: 'iShop',
+        nameShop: 'iShop',
         emptyFallbackPhrase: 'Товаров больше не осталось'
       }
     },
@@ -36,7 +36,7 @@ var ProductList = React.createClass({
     },
   
     propTypes: {
-      shopName: React.PropTypes.string.isRequired,
+      nameShop: React.PropTypes.string.isRequired,
       propductList: React.PropTypes.arrayOf(
         React.PropTypes.shape({
           code: React.PropTypes.string.isRequired,
@@ -59,11 +59,11 @@ var ProductList = React.createClass({
             this.state.productList.map((prod) => {
               return React.createElement(ProductItem, {
                 key: prod.id,
-                id: prod.id,
-                name: prod.name,
-                price: prod.price,
-                url: prod.url,
-                count: prod.count,
+                сode: prod.code,
+                nameProduct: prod.nameProduct,
+                priceProduct: prod.priceProduct,
+                urlProduct: prod.urlProduct,
+                countProduct: prod.countProduct,
                 cbSelected: this.onProductClick,
                 selectedProduct: this.state.selectedProduct,
                 cbDeleted: this.onProductDelete
