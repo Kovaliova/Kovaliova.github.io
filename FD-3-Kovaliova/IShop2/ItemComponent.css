@@ -5,6 +5,8 @@
 }
 .Article {
     border-top: none;
+    display: flex;
+    justify-content: space-around;
 }
 .Type {
     flex-basis: 12%;
