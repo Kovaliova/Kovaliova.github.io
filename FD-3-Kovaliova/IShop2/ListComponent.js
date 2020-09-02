@@ -6,13 +6,10 @@ var ListComponent = React.createClass({
         articles: React.PropTypes.arrayOf(
             React.PropTypes.shape({
                 code: React.PropTypes.string.isRequired,
-                type: React.PropTypes.string.isRequired,
-                brand: React.PropTypes.string.isRequired,
-                model: React.PropTypes.string.isRequired,
-                power: React.PropTypes.number.isRequired,
-                photoURL: React.PropTypes.any.isRequired,
-                quantity: React.PropTypes.number.isRequired,
-                price: React.PropTypes.number.isRequired
+                nameProduct: React.PropTypes.string.isRequired,
+                urlProduct: React.PropTypes.any.isRequired,
+                countProduct: React.PropTypes.number.isRequired,
+                priceProduct: React.PropTypes.number.isRequired
             })
         )
     },
@@ -41,20 +38,17 @@ var ListComponent = React.createClass({
             React.createElement(ItemComponent,{
                 key:item.code,
                 code:item.code,
-                type:item.type,
-                brand:item.brand,
-                model:item.model,
-                power:item.power,
-                photoURL:item.photoURL,
-                quantity:item.quantity,
-                price:item.price,
+                nameProduct:item.nameProduct,
+                urlProduct:item.urlProduct,
+                countProduct:item.countProduct,
+                priceProduct:item.priceProduct,
                 isSelected:(this.state.selectedItem==item.code),
                 cbSelectedItemCode: this.selectedItemCode,
                 cbDelete: this.delete
             })
     );
         return React.DOM.div({className:'Catalogue'},
-            React.DOM.div({className:'Text'}, this.props.name),
+            React.DOM.div({className:'headName'}, this.props.name),
             React.DOM.div({className:'Titles'}, head),
             React.DOM.div({className:'ListContent'}, items),
         );
