@@ -20,7 +20,7 @@ var ItemComponent = React.createClass({
       return React.DOM.div({
               className: 'Article',
               onClick:this.selectedItemCode,
-              style:this.props.isSelected?({backgroundColor:'#ff7f50'}):null
+              style:this.props.isSelected?({backgroundColor:'#FFFF00'}):null
           },
           React.DOM.div({className:'Name'},this.props.nameProduct),
           React.DOM.div({className:'Url'},this.props.urlProduct),
