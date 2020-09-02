@@ -32,4 +32,8 @@
 }
 .Article>div{
     padding: 5px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 14%;
 }

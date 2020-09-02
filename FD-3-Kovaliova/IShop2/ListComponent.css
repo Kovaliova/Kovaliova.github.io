@@ -23,4 +23,5 @@
 }
 .Title {
     padding: 5px 15px;
+    flex-basis: 14%;
 }
