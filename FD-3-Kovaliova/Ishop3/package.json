@@ -4,28 +4,29 @@
   "description": "rtyy",
   "main": "App.js",
   "scripts": {
-    "test": "start",
     "start": ".\\node_modules\\.bin\\lite-server",
     "build": ".\\node_modules\\.bin\\webpack",
     "livebuild": ".\\node_modules\\.bin\\webpack-dev-server --progress --colors"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Kovaliova/Kovaliova.github.io.git"
-  },
-  "keywords": [
-    "12345"
-  ],
-  "author": "kovaliova",
   "license": "ISC",
   "dependencies": {
-    "babel": "^6.23.0",
+    "eslint-config-react-app": "^5.2.1",
+    "events": "^3.2.0",
     "lite-server": "^2.5.4",
+    "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^4.3.0",
+    "extract-text-webpack-plugin": "^3.0.2",
     "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   }
 }
