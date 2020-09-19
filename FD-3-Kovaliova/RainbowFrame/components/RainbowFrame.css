@@ -1,0 +1,11 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 5;
+    width: 100%;
+    max-width: 1300px;
+}
