@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.BrComponent {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.5;
+    color:#fff;
+    background-color: #FFA07A;
+    padding: 50px;
+    margin: auto;
+}
