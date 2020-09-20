@@ -1,6 +1,0 @@
-[ 
-  {"code":1, "name":"Iphone 7","cost": 500,"power": 2000,"Url": "img/iPhone7.jpg","numbers":10},
-  {"code":2, "name":"Iphone 8","cost": 900,"power": 3000,"Url": "img/iPhone8.jpg","numbers":15},
-  {"code":3, "name":"Iphone X","cost": 2000,"power": 4000,"Url": "img/iPhoneX.jpg","numbers":7},
-  {"code":4, "name":"Iphone Xr","cost": 3000,"power": 5000,"Url": "img/iPhoneXr.jpg","numbers":2}
-]
