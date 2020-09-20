@@ -10,13 +10,20 @@ class BR2JSX extends React.Component {
         text: PropTypes.string.isRequired,
     };
 
-    render(){
-        let regExp = /<br\s?\/?>/;
-        let splitText = this.props.text.split(regExp).map( (word,i) => [word,<br key={i} />]);
-        console.log(splitText);
+   splitText = (text) => {
+        const regExp = /(<br\s*\/?>)/ig;
+        const stringArr = text.split(regExp);
+        return stringArr.map((word, i) => {
+          if (regExp.test(word)) {
+            word = <br key={i}/>;
+          }
+          return word;
+        });
+      };
+      render(){
         return (
         <div className="BrComponent">
-            {splitText}
+            {this.splitText(this.props.text)}
         </div>
         )
     }
