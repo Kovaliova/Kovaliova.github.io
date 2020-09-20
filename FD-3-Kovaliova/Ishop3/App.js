@@ -1,22 +1,19 @@
-'use strict';
+"use strict";
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import PropTypes from 'prop-types';
+import GoodsList from './components/ListComponent/ListComponent';
 
-import ListComponent from './components/ListComponent';
-
-let textWithName = "Каталог товаров в интернет-магазине AppleService";
-let titles = ['Тип','Марка телефона','Модель телефона','Общее время работы','URL изображения','Количество на складе, шт.','Цена, бел.руб.','Кнопки контроля'];
-let items = require('./items.json');
+var tableName = 'Catalog AppleService';
+var tableHeaders = require('./data/theadtable.json');
+var goodsArray = require('./data/items.json');
+var question = 'Do you want to delete this row?';
 
 ReactDOM.render(
-    <ListComponent
-        name={textWithName}
-        head={titles}
-        articles={items}
-        startCardMode={0}
-        startAddBtnMode={1}
-    />,
-    document.getElementById('container')
-);
+  <GoodsList
+    tableName={tableName}
+    tableHeaders={tableHeaders}
+    goodsArray={goodsArray}
+    question={question}
+  />, document.getElementById('container')
+)
