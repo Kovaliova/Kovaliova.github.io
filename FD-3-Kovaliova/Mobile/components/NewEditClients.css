@@ -1,0 +1,50 @@
+.NewEditClients {  
+    background-color: rgb(250, 128, 114);
+    max-width: 450px;
+    margin: 35px auto;
+    padding: 10px 40px;
+  }
+  
+  .NewEditClients h2 {  
+    text-align: center;
+    color: #fff;
+  }
+  
+  .NewEditClients .LableInput {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    width: 100px;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 3px;
+  }
+  .NewEditClients .blockBtnNewEdit {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .NewEditClients .BtnNewEdit { 
+    width: 130px;
+    height: 40px;
+    border: 1px solid #fff;
+    background: #FFA07A;
+    color: #fff;
+  }
+  
+  
+  .NewEditClients input {
+    margin: 0 10px;
+    width: 250px;
+    height: 40px;
+    border: 0;
+    outline-style: double;
+    outline-color: #fff;
+  }
+  
+  .NewEditClients .ValidMessage {
+    color: red;
+    font-size: 12px;
+    
+  }
