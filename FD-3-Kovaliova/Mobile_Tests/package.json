@@ -1,5 +1,5 @@
 {
-  "name": "mobile_test",
+  "name": "mobile_tests",
   "version": "1.0.0",
   "description": "",
   "main": "App.js",
@@ -8,7 +8,7 @@
     "livebuild": ".\\node_modules\\.bin\\webpack-dev-server --progress --colors",
     "test": "jest"
   },
-  "author": "kate-kovaliova",
+  "author": "kate_kovaliova",
   "license": "ISC",
   "dependencies": {
     "events": "^1.1.1",
