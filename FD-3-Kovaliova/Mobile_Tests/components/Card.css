@@ -1,7 +1,7 @@
 .MobileCompany .ClientCard {
     border: solid blueviolet 1px; 
     padding: 15px;
-    width: 890px;
+    width: 738px;
     margin-top:15px;
     font-size: 18px;
   }
@@ -14,3 +14,24 @@
     font-size: 16px;
     
   }
+.MobileCompany input[type="button"]{
+  background-color: salmon;
+  border: 1px solid salmon;
+  color: #fff;
+  padding: 10px 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+.MobileCompany input[type="text"]{
+  margin: 0 30px;
+  padding: 10px;
+}
+.MobileCompany div{
+  width: 55%;
+  margin-bottom: 20px;
+}
+.MobileCompany div label{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
