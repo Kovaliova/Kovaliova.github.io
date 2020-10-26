@@ -81,10 +81,10 @@ class Tomato implements IScalable  {
 
 let scales:Scales = new Scales();
 
-let apple1:Apple=new Apple("Anis", 150);
-let tomato1:Tomato=new Tomato("Black", 200);
-let apple2:Apple=new Apple("Golden", 210);
-let tomato2:Tomato=new Tomato("Yellow", 205);
+let apple1:Apple=new Apple("AnisApple", 150);
+let tomato1:Tomato=new Tomato("BlackTomato", 200);
+let apple2:Apple=new Apple("GoldenApple", 210);
+let tomato2:Tomato=new Tomato("YellowTomato", 205);
 
 scales.add(apple1);
 scales.add(apple2);
