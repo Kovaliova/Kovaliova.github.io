@@ -24,34 +24,24 @@ exports[`Test HEADER with shallow HEADER 1`] = `
       categories={
         Array [
           Object {
-            "category": "electronics",
+            "category": "shoes",
             "id": 1,
-            "name": "Электроника",
+            "name": "shoes",
           },
           Object {
             "category": "computers",
             "id": 2,
-            "name": "Компьютеры",
+            "name": "computers",
           },
           Object {
-            "category": "build",
+            "category": "accessories",
             "id": 3,
-            "name": "Стройка и ремонт",
+            "name": "accessories",
           },
           Object {
-            "category": "house_gaden",
+            "category": "clothing",
             "id": 4,
-            "name": "Дом и сад",
-          },
-          Object {
-            "category": "car",
-            "id": 5,
-            "name": "Авто",
-          },
-          Object {
-            "category": "sport",
-            "id": 6,
-            "name": "Спорт",
+            "name": "clothing",
           },
         ]
       }
