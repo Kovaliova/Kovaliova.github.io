@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-https://shopapp-upliner.firebaseapp.com
+https://my-project-d7a08.firebaseio.com
 
 ## Available Scripts
 
