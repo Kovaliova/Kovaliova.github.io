@@ -40,6 +40,10 @@
   color: black;
   font-weight: 600;
 }
+.FormAuthLayer.open input,
+.FormAuthLayer.close input{
+  width: 100%;
+}
 .FormAuthLayer.open button{
   background: inherit;
   border: 0;

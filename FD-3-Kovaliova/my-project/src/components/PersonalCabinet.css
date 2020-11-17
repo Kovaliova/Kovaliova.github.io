@@ -49,6 +49,11 @@
     width: 80%;
   }
 }
+@media (max-width:600px){
+  .PersonalCabinet .blockProduct{
+    width: 55%;
+  }
+}
 @media all and (max-width:500px){
   .PersonalCabinet h2{
     width: 65%;
@@ -59,6 +64,18 @@
   }
   .PersonalCabinet .ant-card-grid{
     min-width: 150px;
+  }
+
+}
+@media all and (max-width:380px){
+  .PersonalCabinet .ant-card-grid{
+    min-width: 340px;
+  }
+
+}
+@media all and (max-width:360px){
+  .PersonalCabinet .ant-card-grid{
+    min-width: 320px;
   }
 
 }

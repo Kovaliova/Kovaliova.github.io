@@ -1,6 +1,6 @@
 .Header{
   background-color: #f5f5f5;
-  height: 25vh;
+  height: 15vh;
   box-sizing: border-box;
   display: flex;
 flex-direction: column;
@@ -28,8 +28,7 @@ min-width: 360px;
   justify-content: center;
   align-items: center;
 }
-
-@media all and (max-width:500px){
+@media all and (max-width:600px){
   .Header{
     height: 20vh;
   }
@@ -39,5 +38,17 @@ min-width: 360px;
   .Header .banner_title_shop{
     margin-left: -10px;
     transform: scale(0.7);
+  }
+}
+@media all and (max-width:500px){
+  .Header{
+    height: 20vh;
+  }
+  .Header .PageLink{
+    justify-content: flex-start;
+  }
+  .Header .banner_title_shop{
+    margin-left: -30px;
+    transform: scale(0.6);
   }
 }

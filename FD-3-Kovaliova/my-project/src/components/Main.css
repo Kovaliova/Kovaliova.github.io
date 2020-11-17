@@ -37,10 +37,19 @@
  height: 100%;
  align-content: space-around;
 }
-
+@media (max-width:1440px){
+  .Main_conteiner{
+    width: 46%;
+  }
+}
+@media (max-width:1024px){
+  .Main_conteiner{
+    width: 61%;
+  }
+}
 @media (max-width: 930px) {
   .Main_conteiner{
-    width: 92%;
+    width: 79%;
   }
   .Main__FlexContainer__News div{
     max-height: 35vh;
@@ -55,6 +64,11 @@
   
   }
 
+}
+@media (max-width: 768px) {
+  .Main_conteiner{
+    width: 91%;
+  }
 }
 @media all and (max-width:500px){
   .Main__FlexContainer__News div{

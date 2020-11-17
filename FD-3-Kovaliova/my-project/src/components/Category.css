@@ -91,7 +91,7 @@ width: 200px;
    flex-direction: column;
   }
   .Category .filter_field{
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
   }
   .SearchField{

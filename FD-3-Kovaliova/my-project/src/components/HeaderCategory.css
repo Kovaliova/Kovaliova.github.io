@@ -29,7 +29,7 @@
 }
 @media (max-width: 1024px) {
   .Header{
-    height: 11vh;
+    height: 16vh;
   }
   .HeaderCategory_Line{
     min-width: 14vw;

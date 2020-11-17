@@ -1,6 +1,6 @@
 .LoginBar{
-  position: absolute;
-  top: 78px;
+  position: fixed;
+  top: 30px;
   right: 50px;
   cursor: pointer;
   color: black;
