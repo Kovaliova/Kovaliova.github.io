@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test HEADER with shallow HEADER 1`] = `
+<div
+  className="Header"
+>
+  <NavLink
+    activeClassName="ActivePageLink"
+    aria-current="page"
+    className="PageLink"
+    exact={true}
+    to="/"
+  >
+    <div
+      className="banner_title_shop"
+    >
+      Upliner
+    </div>
+  </NavLink>
+  <div
+    className="HeaderCategory"
+  >
+    <HeaderCategory
+      categories={
+        Array [
+          Object {
+            "category": "electronics",
+            "id": 1,
+            "name": "Электроника",
+          },
+          Object {
+            "category": "computers",
+            "id": 2,
+            "name": "Компьютеры",
+          },
+          Object {
+            "category": "build",
+            "id": 3,
+            "name": "Стройка и ремонт",
+          },
+          Object {
+            "category": "house_gaden",
+            "id": 4,
+            "name": "Дом и сад",
+          },
+          Object {
+            "category": "car",
+            "id": 5,
+            "name": "Авто",
+          },
+          Object {
+            "category": "sport",
+            "id": 6,
+            "name": "Спорт",
+          },
+        ]
+      }
+    />
+  </div>
+</div>
+`;

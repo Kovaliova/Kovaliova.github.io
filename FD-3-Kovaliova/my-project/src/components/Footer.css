@@ -1,0 +1,30 @@
+
+.App {
+  text-align: center;
+}
+.Footer{
+  background: #F5F5F5;
+  min-height: 50px;
+  height: 10vh;
+  min-width: 360px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Footer .icon{
+  font-size: 20px;
+  display: inline;
+}
+.Footer .icon a{
+  color: black;
+  padding: 0 15px;
+}
+.Footer .icon a:first-child{
+  padding: 0 15px 0 0;
+}
+.Footer .icon a:last-child{
+  padding: 0 0 0 15px;
+}
+.Footer .icon a:hover{
+  color: red;
+}

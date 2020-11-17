@@ -1,0 +1,54 @@
+.CardProduct{
+  background-color: #f5f5f5;
+  min-height: 75vh;
+  min-width: 360px;
+  margin: 30px 0 0;
+
+}
+.CardProduct .Button_allListProd{
+  margin: 2px;
+}
+.CardProduct h2{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border: 1px dashed black;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
+}
+.CardProduct button{
+  background: inherit;
+  border: 1px solid black;
+  text-transform: uppercase;
+  font-weight: 600;
+  box-shadow: inherit;
+  color: black;
+}
+.CardProduct button:hover{
+  color: red;
+  border: 1px solid red;
+  background: inherit;
+}
+@media (max-width: 1440px) {
+  .CardProduct h2{
+    width: 32%;
+  }
+}
+@media (max-width: 930px) {
+  .CardProduct h2{
+    width: 55%;
+  }
+}
+@media all and (max-width:500px){
+  .CardProduct h2{
+    width: 85%;
+    font-size: 17px;
+  }
+  .CardProduct .Button_allListProd{
+    margin: 2px 2px 10px;
+  }
+}

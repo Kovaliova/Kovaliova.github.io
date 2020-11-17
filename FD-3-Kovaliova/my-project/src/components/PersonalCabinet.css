@@ -1,0 +1,64 @@
+.PersonalCabinet{
+  background-color: #f5f5f5;
+  height: 75vh;
+  color:black;
+  margin: 30px 0 0;
+}
+
+.PersonalCabinet a{
+  color:black;
+  margin-bottom: 30px;
+}
+.PersonalCabinet .blockProduct{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: flex-start;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 3% 0;
+  width: 34%;
+  margin: 30px auto;
+}
+.PersonalCabinet h2{
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 1px dashed black;
+  display: flex;
+  justify-content: center;
+  width: 15%;
+  margin: 0 auto;
+}
+.PersonalCabinet .ant-card-grid{
+  border: 1px dashed black;
+  min-width: 298px;
+}
+@media (max-width: 1440px) {
+  .PersonalCabinet h2{
+    width: 25%;
+  }
+  .PersonalCabinet .blockProduct{
+    width: 43%;
+  }
+}
+@media (max-width: 930px) {
+  .PersonalCabinet h2{
+    width: 45%;
+  }
+  .PersonalCabinet .blockProduct{
+    width: 80%;
+  }
+}
+@media all and (max-width:500px){
+  .PersonalCabinet h2{
+    width: 65%;
+  }
+  .PersonalCabinet .blockProduct{
+    width: 100%;
+    padding: 0 20px;
+  }
+  .PersonalCabinet .ant-card-grid{
+    min-width: 150px;
+  }
+
+}

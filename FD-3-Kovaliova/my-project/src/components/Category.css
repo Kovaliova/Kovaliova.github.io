@@ -1,0 +1,104 @@
+.Category{
+  background-color: #f5f5f5;
+  min-height: 75vh;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  min-width: 360px;
+  margin: 30px auto;
+  width: 60%;
+  justify-content: space-between;
+}
+
+.Category .block_product{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content:space-around;
+  align-content: flex-start;
+  align-items: center;
+  width: 68%;
+  margin: 0 auto;
+}
+.Category .filter_field{
+display: inline-block;
+height: 100%;
+border: 1px black dashed;
+border-radius: 5px;
+width: 200px;
+}
+.Category .filter_field .SearchField button{
+  background: inherit;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: inherit;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  margin-left: 10px;
+}
+.Category .filter_field .range_summ span{
+  font-weight: 600;
+  text-transform: uppercase;
+  color: black;
+}
+.Category .filter_field .SearchField button:hover{
+  color: red;
+  border: 1px solid red;
+}
+.Category .block_product .ant-card-grid{
+  border: 1px dashed black;
+  color: black;
+  min-width: 350px;
+  margin-bottom: 30px;
+}
+.Category .ant-slider-track{
+  background: black!important;
+}
+.Category .ant-slider-dot-active{
+  border-color: black!important;
+}
+.Category .ant-slider-handle{
+  border: 2px solid black!important;
+}
+.Category .ant-slider-mark-text-active{
+  font-weight: 600;
+  color: black;
+}
+.Category .ant-checkbox-checked .ant-checkbox-inner{
+  background-color: black;
+  border-color: black;
+}
+@media (max-width: 1440px) {
+  .Category .block_product .ant-card-grid{
+    min-width: 280px;
+  }
+}
+@media (max-width: 930px) {
+  .Category{
+    width: 95%;
+  }
+  .Category .block_product{
+    width: 71%;
+  }
+  .Category .block_product .ant-card-grid{
+    min-width: 250px;
+  }
+}
+@media all and (max-width:500px){
+  .Category{
+   flex-direction: column;
+  }
+  .Category .filter_field{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .SearchField{
+    width: 100%;
+  }
+  .Category .block_product{
+    margin: 30px auto 0;
+    width: 100%;
+  }
+}
