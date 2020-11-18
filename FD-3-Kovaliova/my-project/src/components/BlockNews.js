@@ -18,7 +18,6 @@ let BlockNews =(props)=>{
            <span>
            {props.text} <br/>
            </span>
-        
 
           </div>
         </div>

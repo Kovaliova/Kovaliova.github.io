@@ -18,9 +18,6 @@ const marks = {
 const CheckboxGroup = Checkbox.Group;
 
 class SearchField extends React.Component{
-
-// componentDidUpdate()
-
 render(){
   return(
     <div className='SearchField'>

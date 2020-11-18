@@ -18,11 +18,7 @@ const columns = [{
 
 
 let ActiveProduct=(props)=>{
-
-  // console.log('ActiveProduct---',props)
  let descriptionParam=Object.keys(props.descriptionProduct)
-//  console.log(descriptionParam)
- 
  let data=descriptionParam.map((item, index)=>{
   return(
 {
@@ -32,10 +28,6 @@ let ActiveProduct=(props)=>{
 }
   )
 })
-
-// console.log(data)
-
-
   return(
     <React.Fragment>
       <div className='ActiveProduct'>
@@ -64,8 +56,6 @@ let ActiveProduct=(props)=>{
 
         </React.Fragment>
         :<Button type="primary" onClick={props.omNotification} >Add</Button>
-
-
       }
       </div>
       </div>

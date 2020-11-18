@@ -21,8 +21,6 @@ class CardProduct extends React.Component{
   }
 
   addProductToLoginUser=(categoryName,productId )=>{
-    // console.log(this.props.stateApp.isLogin)
-
       const {isHaveProductInBasket}= this.findProductInBasket(productId)
       if(isHaveProductInBasket){
         this.onMessageError('Already in the cart')
@@ -59,7 +57,6 @@ onMessageError=(message)=>{
   findProductInBasket=(productId)=>{
       let indexItem=false;
       let userBasket=this.props.stateApp.activeUser.bascetProduct; // [0,1]  product
-     // let isHaveProductInBasket=false
      let isHaveProductInBasket=userBasket.some((item, index) => {
         if(item.productId===parseInt(productId)){
            indexItem=index;
@@ -83,8 +80,6 @@ onMessageError=(message)=>{
   }
 
   render(){
-    // console.log('CardProduct----', this.props)
-    // console.log('this.props.stateApp.isLogin ',this.props.stateApp.isLogin);
     let {descriptionProduct,fullName,categoryName, productId } =this.findProductForDetailInfo()
    
     return (
@@ -93,9 +88,7 @@ onMessageError=(message)=>{
           (this.props.stateApp.isLogin)
           ?
           <NavLink to="/personalCabinet"  activeClassName="ActivePageLink">
-
           <Button type="primary" className='Button_allListProd' >List  </Button>
-            {/* {`${this.props.stateApp.activeUser.login} cabinet `} */}
           </NavLink>
           :null
       }

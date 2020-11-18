@@ -15,16 +15,12 @@ class Category extends React.Component{
   }
   
   onAfterChange=(value)=>{
-    // console.log('onAfterChange: ', value);
-    // вижу в массиве 2 числа
    this.setState({
     arrLimitPrice:value,
    })
   }
 
   onChangeCheckBox=(checkedValues)=>{
-    // console.log('checked = ', checkedValues);
-
     this.setState({
       arrAvailableRange:checkedValues,
      })
@@ -49,7 +45,6 @@ class Category extends React.Component{
 
   toSortListCategory=()=>{
     let showArr=[];
-    // console.log('SORT')
     let categoryName=this.props.match.params.name;
     let storeCategory=this.props.dataShop.dataShop.category[categoryName].products;
 
@@ -86,7 +81,6 @@ class Category extends React.Component{
   componentDidUpdate(prevProps,prevState){
 
     if(prevProps.match.params.name!==this.props.match.params.name){
-      // console.log('=========')
       this.setState({
         arrLimitPrice:[500, 1500],
         arrAvailableRange:[],
@@ -98,8 +92,6 @@ class Category extends React.Component{
   }
 
   render(){
-  //  console.log('Category from', this.props)
-    // console.log('Category STATE', this.state)
     let {arrRange,storeCategory }= this.toMakeRangeCategory();
 
     let arrAnswers=storeCategory.map((item, index)=> 

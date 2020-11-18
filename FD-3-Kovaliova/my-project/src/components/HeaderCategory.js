@@ -3,8 +3,6 @@ import './HeaderCategory.css';
 import { NavLink } from 'react-router-dom';
 
 let HeaderCategory =(props)=>{
- // console.log(props)
-
     return (
       <div className='HeaderCategory_conteiner'>
        {props.categories.map( item=> {

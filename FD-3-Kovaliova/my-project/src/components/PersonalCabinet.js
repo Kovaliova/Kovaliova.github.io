@@ -26,7 +26,6 @@ class PersonalCabinet extends React.Component{
   }
 
   render(){
-    // console.log(this.props)
     let arrProduct=this.findProductInStore();
 
     return (
