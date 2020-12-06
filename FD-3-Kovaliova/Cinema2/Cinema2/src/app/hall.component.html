@@ -1,0 +1,18 @@
+
+<div>
+<span>Всех мест {{getAllSit()}}</span><br />
+<span>Свободных мест {{getFreeSit()}}</span><br />
+<span>Занятых мест {{getBusySit()}}</span>
+<div class='Hall'><div class='Place' *ngFor="let place of getPlacesObservable()" [style.background-color]="place==false?'red':'green'"></div></div>
+<br /><br />
+<div>
+  <span>Очная касса:</span>
+  <cash></cash>
+  <span>Интернет-касса:</span>
+  <cash></cash>
+</div>
+
+
+</div>
+
+
